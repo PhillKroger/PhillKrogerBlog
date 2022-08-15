@@ -37,6 +37,7 @@ body {
 .my-projects {
     padding-left: 10%;
     padding-top: 5%;
+    margin-bottom: 10%;
 }
 
 .project {
@@ -92,4 +93,32 @@ body {
 
 .clr-2 {
     color: #ECB390;
+}
+
+.header {
+    margin-left: 10%;
+}
+
+.header-el {
+    text-decoration: none;
+
+    color: black;
+    opacity: 0.9;
+    float: left;
+    margin-right: 30px;
+}
+
+.posts-post {
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+}
+
+.posts {
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+.post {
+    margin-left: 10%;
 }

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<title>
+    {% block title %}
+        Blog Post | PhillKrogerBlog
+    {% endblock %}
+</title>
+
+{% block content %}
+    <div class="post">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.post_text }}</p>
+    </div>
+{% endblock %}

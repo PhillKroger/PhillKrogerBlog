@@ -29,3 +29,15 @@ class Project(models.Model):
     class Meta:
         verbose_name = "Project"
         verbose_name_plural = "Projects"
+
+class Post(models.Model):
+    title = models.CharField("Post Title", max_length=255)
+    post_text = models.TextField("Post Text", max_length=10000)
+    pubdate = models.DateTimeField("Publish Time", null=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Post"
+        verbose_name_plural = "Posts"

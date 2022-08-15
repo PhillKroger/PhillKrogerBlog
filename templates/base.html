@@ -10,50 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="cont">
-            <h1 class="hi-h1">Hi! I'm <span class="clr"> PhillKroger</span></h1>
-            <img src="/media/phillkroger.jpg" class="phill-img">
-            <div style="clear:left"></div>
-            <p class="hi-p">But my second name is Maksim Bondarev.<br>
-                I'm from Belarus and i'm 16. Started to code 2 years ago. <br>
-                Now i study in IT-class at SBEI school №152 in Moscow.</p>
-            <div style="clear:left"></div>
-            <p class="hi-p">I want to be an ML engineer and become a member of <br>
-                many open-source projects. Remind me to grind CodeWars and LeetCode<br>
-                sometimes, thanks.</p>
-            <div style="clear:left"></div>
-        </div>
-
-        <div class="skills">
-            <h1 class="skills-h1">All my tech <span class="clr-1">skills</span></h1>
-            <p class="skills-p">Sleep, watch anime, sleep again,<br> read the ingredients on a cereal box. Ok i'm just kidding...</p>
-            <p class="skills-p">First that i started to learn is Python.<br>Python libraries and frameworks that i use: Django, NumPy,<br>
-                Pandas, Tensorflow, Discord.Py, PyGame, PyQT, Pillow.<br>Other skills: SQL, MySQL, PyCharm, Bootstrap, PHP, Tilda, Photoshop, Premiere Pro.</p>
-        </div>
-
-        <div class="my-projects">
-            <div class="all-projects">
-                <h1 class="projects-h1">What I do. My <span class="clr-2">projects</span></h1>
-                {% for project in projects %}
-                    {% if project %}
-                        <div class="project">
-                            <p class="project-title"><b>{{ project.title|title }}</b></p>
-                            <p class="project-description">{{ project.description }}</p>
-                            <p class="project-link"><a href="{{ project.link }}">View Project</a></p>
-                        </div>
-                    {% else %}
-                        No projects
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </div><div style="clear:left"></div>
-        <footer>
-            <p class="email-1">
-                <code>phillKroger@gmail.com</code>
-            </p>
-            <p class="email">
-                <code>Designed and developed by Maksim Bondarev in 2022</code>
-            </p>
-        </footer>
+        {% include 'header.html' %}
+        {% block content %}{% endblock %}
     </body>
 </html>
