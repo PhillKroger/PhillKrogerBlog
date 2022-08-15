@@ -122,3 +122,22 @@ body {
 .post {
     margin-left: 10%;
 }
+
+.post-title {
+    font-size: 30px;
+}
+
+.post-text {
+    margin-right: 20%;
+}
+
+.sigma-post {
+    margin-bottom: 7%;
+}
+
+.resum-title {
+    margin-left: 10%;
+    font-size: 30px;
+    color: black;
+    opacity: 0.9;
+}

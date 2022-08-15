@@ -10,10 +10,16 @@
 {% block content %}
     <div class="posts">
         {% for post in object_list %}
-            <p><a class="posts-post" href='{{ post.id }}'>{{ post.title }}</a></p>
+            <div class="sigma-post">
+                <a class="posts-post" href='{{ post.id }}'>
+                    <p class="post-title">{{ post.title }}</p>
+                    <p class="post-text">{{ post.post_text|truncatewords:10 }}</p>
+                    <p>{{ post.pubdate }}</p>
+                </a>
+            </div>
+
         {% empty %}
             <h1>No posts</h1>
         {% endfor %}
     </div>
-
 {% endblock %}

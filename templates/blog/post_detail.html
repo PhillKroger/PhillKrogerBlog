@@ -9,7 +9,8 @@
 
 {% block content %}
     <div class="post">
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.post_text }}</p>
+        <p class="post-title">{{ post.title }}</p>
+        <p class="post-text">{{ post.post_text }}</p>
+        <p>{{ post.pubdate }}</p>
     </div>
 {% endblock %}
