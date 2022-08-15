@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models import TextField
 
 
 class Tag(models.Model):
@@ -19,10 +18,10 @@ class Project(models.Model):
     title = models.CharField("Project Title", max_length=255)
     description = models.TextField("Description", max_length=10000, default="PhillKroger's Project")
     tags = models.ManyToManyField(Tag)
-    project_preview = models.ImageField("Project Preview")
     category = models.ForeignKey(ProjectCategory, on_delete=models.CASCADE)
     link = models.URLField("Project Link", max_length=128, unique=True, blank=True, default=None)
     project_github = models.URLField("Project Github", max_length=128, blank=True, default=None)
+    pubdate = models.DateTimeField("Publish Time", null=True)
 
     def __str__(self):
         return self.title

@@ -1,8 +1,95 @@
 body {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
+    font-family: 'Comfortaa', cursive;
 }
 
-.title {
-    font-family: 'Comfortaa', cursive;
-    color: #F1F1F1;
+.cont {
+    padding: 5% 10% 5% 10%;
+}
+
+.skills {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.phill-img {
+    border-radius: 500px;
+    width: 400px;
+    float: right;
+}
+
+.hi-h1 {
+    float:left;
+    opacity: 0.8;
+}
+
+
+.hi-p {
+    font-size:20px;
+    float:left;
+}
+
+
+.skills-h1 {
+    opacity: 0.8;
+}
+
+.my-projects {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.project {
+    float: left;
+    background-color: #CEE5D0;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    max-height: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-h1 {
+    opacity: 0.8;
+}
+
+.project-link a {
+    text-decoration: none;
+}
+
+.project-title {
+    opacity: 0.9;
+}
+
+.contacts-h1 {
+    opacity: 0.8;
+}
+
+.contacts {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.email-1 {
+    margin-left: 20%;
+    float: left;
+    text-decoration: underline;
+}
+
+.email {
+    margin-left: 20%;
+    float: left;
+}
+
+.clr {
+    color: #76BA99;
+}
+
+.clr-1 {
+    color: #748DA6;
+}
+
+.clr-2 {
+    color: #ECB390;
 }

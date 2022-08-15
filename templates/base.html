@@ -1,182 +1,59 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>PhillKrogerBlog</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cont">
+            <h1 class="hi-h1">Hi! I'm <span class="clr"> PhillKroger</span></h1>
+            <img src="/media/phillkroger.jpg" class="phill-img">
+            <div style="clear:left"></div>
+            <p class="hi-p">But my second name is Maksim Bondarev.<br>
+                I'm from Belarus and i'm 16. Started to code 2 years ago. <br>
+                Now i study in IT-class at SBEI school №152 in Moscow.</p>
+            <div style="clear:left"></div>
+            <p class="hi-p">I want to be an ML engineer and become a member of <br>
+                many open-source projects. Remind me to grind CodeWars and LeetCode<br>
+                sometimes, thanks.</p>
+            <div style="clear:left"></div>
+        </div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <style>
-    body {
-        background-color: #f1f1f1;
-    }
+        <div class="skills">
+            <h1 class="skills-h1">All my tech <span class="clr-1">skills</span></h1>
+            <p class="skills-p">Sleep, watch anime, sleep again,<br> read the ingredients on a cereal box. Ok i'm just kidding...</p>
+            <p class="skills-p">First that i started to learn is Python.<br>Python libraries and frameworks that i use: Django, NumPy,<br>
+                Pandas, Tensorflow, Discord.Py, PyGame, PyQT, Pillow.<br>Other skills: SQL, MySQL, PyCharm, Bootstrap, PHP, Tilda, Photoshop, Premiere Pro.</p>
+        </div>
 
-    .cont {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
-    .skills {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-family: 'Comfortaa', cursive;
-    }
-
-    .phill-img {
-        border-radius: 500px;
-        width: 400px;
-        float: right;
-    }
-
-    .hi-h1 {
-        font-family: 'Comfortaa', cursive;
-        float:left;
-        opacity: 0.8;
-    }
-
-
-    .hi-p {
-        font-family: 'Comfortaa', cursive;
-        font-size:20px;
-        float:left;
-    }
-
-
-    .skills-h1 {
-        opacity: 0.8;
-    }
-
-    .skills-p {
-
-    }
-
-
-    .my-projects {
-        font-family: 'Comfortaa', cursive;
-        padding-left: 10%;
-
-        padding-top: 5%;
-    }
-
-    .project {
-        float: left;
-        background-color: #CEE5D0;
-        padding: 20px;
-        border-radius: 15px;
-        max-width: 400px;
-
-        max-height: 300px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .projects-h1 {
-        opacity: 0.8;
-    }
-
-    .project-link a {
-        text-decoration: none;
-    }
-
-    .project-title {
-        opacity: 0.9;
-    }
-
-    .contacts-h1 {
-        font-family: 'Comfortaa', cursive;
-        opacity: 0.8;
-    }
-
-    .contacts {
-        padding-left: 10%;
-        padding-top: 5%;
-    }
-
-    .email-1 {
-        font-family: 'Comfortaa', cursive;
-        margin-left: 20%;
-        float: left;
-        text-decoration: underline;
-    }
-
-    .email {
-        font-family: 'Comfortaa', cursive;
-        margin-left: 20%;
-        float: left;
-    }
-
-    .clr {
-        color: #76BA99;
-    }
-
-    .clr-1 {
-        color: #748DA6;
-    }
-
-    .clr-2 {
-        color: #ECB390;
-    }
-</style>
-</head>
-
-<body>
-
-<div class="cont">
-    <h1 class="hi-h1">Hi! I'm <span class="clr">PhillKroger</span></h1>
-    <img src="https://cdn.discordapp.com/attachments/917495560376836106/1008441388611936366/3504CFAA-CAD0-44FF-8D31-6F6AF07B39AD.jpg" class="phill-img">
-    <div style="clear:left"></div>
-    <p class="hi-p">But my second name is Maksim Bondarev.<br>I'm from Belarus and i'm 16. Started to code 2 years ago. <br>Now i study in IT-class at SBEI school №152 in Moscow.</p>
-    <div style="clear:left"></div>
-    <p class="hi-p">I want to be an ML engineer and become a member of <br>many open-source projects. Remind me to grind CodeWars and LeetCode<br> sometimes, thanks.</p>
-    <div style="clear:left"></div>
-    <!--
-        <svg style="width: 65px;opacity: 0.8; float: left;" class="w-6 hover:text-red-400 hover:scale-150" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="currentColor"></path></svg>
-    -->
-</div>
-
-
-
-
-<div class="skills">
-    <h1 class="skills-h1">All my tech <span class="clr-1">skills</span></h1>
-    <p class="skills-p">Sleep, watch anime, sleep again,<br> read the ingredients on a cereal box. Ok i'm just kidding...</p>
-    <p class="skills-p">First that i started to learn is Python.<br>Python libraries and frameworks that i use: Django, NumPy,<br> Pandas, Tensorflow, Discord.Py, PyGame, PyQT, Pillow.<br>Other skills: SQL, MySQL, PyCharm, Bootstrap, PHP, Tilda, Photoshop, Premiere Pro.</p>
-</div>
-
-<div class="my-projects">
-    <div class="all-projects">
-        <h1 class="projects-h1">What I do. My <span class="clr-2">projects</span></h1>
-        {% for project in projects %}
-            {% if project %}
-                <div class="project">
-                    <p class="project-title"><b>{{ project.title|title }}</b></p>
-                    <p class="project-description">{{ project.description }}</p>
-                    <p class="project-link"><a href="{{ project.link }}">View Project</a></p>
-                </div>
-            {% else %}
-                No projects (((
-            {% endif %}
-        {% endfor %}
-    </div>
-</div>
-
-<div style="clear:left"></div>
-
-<div class="contacts">
-
-
-</div>
-
-
-
-<footer>
-  <p class="email-1"><code>phillKroger@gmail.com</code></p>
-    <p class="email"><code>Designed and developed by Maksim Bondarev in 2022</code></p>
-</footer>
-</body>
+        <div class="my-projects">
+            <div class="all-projects">
+                <h1 class="projects-h1">What I do. My <span class="clr-2">projects</span></h1>
+                {% for project in projects %}
+                    {% if project %}
+                        <div class="project">
+                            <p class="project-title"><b>{{ project.title|title }}</b></p>
+                            <p class="project-description">{{ project.description }}</p>
+                            <p class="project-link"><a href="{{ project.link }}">View Project</a></p>
+                        </div>
+                    {% else %}
+                        No projects
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div><div style="clear:left"></div>
+        <footer>
+            <p class="email-1">
+                <code>phillKroger@gmail.com</code>
+            </p>
+            <p class="email">
+                <code>Designed and developed by Maksim Bondarev in 2022</code>
+            </p>
+        </footer>
+    </body>
 </html>
