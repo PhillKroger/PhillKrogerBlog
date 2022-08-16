@@ -1,1 +1,1 @@
-web: gunicorn PhillKrogerBlogg.wsgi
+web: gunicorn PhillKrogerBlogg:app --preload

@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-
+import django_heroku
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,7 +9,7 @@ load_dotenv()
 SECRET_KEY = 'django-insecure-v@w!rmzn9g7m_-dbe2(h_(t*5_w8k!1k9gn=xqz#mc#2x98!28'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://phillkroger.herokuapp.com/", '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -83,3 +83,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if 'DATABASE_URL' in os.environ:
+    import dj_database_url
+
+    DATABASES = {'default': dj_database_url.config()}
