@@ -1,3 +1,4 @@
+
 from pathlib import Path
 import os
 import django_heroku
@@ -6,6 +7,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
+
 SECRET_KEY = 'django-insecure-v@w!rmzn9g7m_-dbe2(h_(t*5_w8k!1k9gn=xqz#mc#2x98!28'
 DEBUG = True
 
