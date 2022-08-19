@@ -1,1 +1,1 @@
-web: gunicorn PhillKrogerBlogg:app --preload
+web: python manage.py runserver 0.0.0.0:$PORT
