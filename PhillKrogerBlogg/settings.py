@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 
 SECRET_KEY = 'django-insecure-v@w!rmzn9g7m_-dbe2(h_(t*5_w8k!1k9gn=xqz#mc#2x98!28'
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["https://phillkroger.herokuapp.com/", '127.0.0.1']
 
