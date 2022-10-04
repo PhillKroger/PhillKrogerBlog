@@ -1,2 +1,2 @@
-# PhillKrogerBlog
+# Phil's Blog
 
